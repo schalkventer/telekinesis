@@ -1,10 +1,10 @@
 # 🧙‍♂️ Telekinesis
 
-Create and control web workers in real-time directly from your JavaScript / Typescript.
+Create and control web workers directly from JavaScript / Typescript using Promises.
 
 ```ts
 import { create } from 'telekinesis';
 
 const worker = create<number, number>(input => input * 2);
-example(10).then(console.log); // 20
+worker(10).then(console.log); // 20
 ```
