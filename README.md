@@ -16,7 +16,6 @@ worker(10).then(console.log); // 20
 ## Advanced TS Example
 
 ```ts
-```ts
 import { create } from 'telekinesis';
 
 const triple: (a: number) => a * 3;
