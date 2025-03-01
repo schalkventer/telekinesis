@@ -16,17 +16,20 @@ worker(10).then(console.log); // 20
 ## Advanced TS Example
 
 ```ts
+```ts
+import { create } from 'telekinesis';
+
 const helpers = {
   triple: (a: number) => a * 3,
   increase: (a: number) => a + 1,
 };
 
 const work = create<
-  { a: { e: number } },
-  { b: { c: number } }
+  { input: { argument: number } },
+  { output: { result: number } }
 >((x) => {
-  return { b: { c: helpers.increase(helpers.triple(x.a.e)) } };
+  return { output: { result: helpers.increase(helpers.triple(x.input.argument)) } };
 }, helpers);
 
-worker(3).then(console.log); // 10
+worker(3).then(console.log); // { output: { result: 10 } }
 ```
