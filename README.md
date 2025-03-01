@@ -5,6 +5,6 @@ Create and control web workers directly from JavaScript / Typescript using Promi
 ```ts
 import { create } from 'telekinesis';
 
-const worker = create<number, number>(input => input * 2);
+const worker = create(input => input * 2);
 worker(10).then(console.log); // 20
 ```
