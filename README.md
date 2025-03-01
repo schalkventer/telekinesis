@@ -4,7 +4,7 @@ _This is still a work in progress, however I've added the initial API documentat
 
 Create and control web workers directly from JavaScript / Typescript using Promises.
 
-## Example
+## Basic JS Example
 
 ```ts
 import { create } from 'telekinesis';
@@ -13,7 +13,7 @@ const worker = create(input => input * 2);
 worker(10).then(console.log); // 20
 ```
 
-## Advanced
+## Advanced TS Example
 
 ```ts
 const helpers = {
