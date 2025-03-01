@@ -2,7 +2,7 @@ _This is still a work in progress, however I've added the initial API documentat
 
 # 🧙‍♂️ Telekinesis
 
-Create and control web workers directly from JavaScript / Typescript using Promises.
+Create and control web workers directly from JavaScript / Typescript using Promises. No build-process required.
 
 ## Basic JS Example
 
