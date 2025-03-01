@@ -1,4 +1,4 @@
-_This is still a work in progress, however I've added the initial API documentation_
+_This is still a work in progress, however I've added the initial API documentation. Will publish on NPM once ready._
 
 # 🧙‍♂️ Telekinesis
 
